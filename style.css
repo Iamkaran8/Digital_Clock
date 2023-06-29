@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    position: relative;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Moirai One', cursive;
+}
+.clock{
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    box-shadow: 2px 2px 20px blueviolet,
+    2px 2px 20px blueviolet,
+    -2px -2px 20px blueviolet,
+    -2px 12px 20px blueviolet;
+}
+#hour,#sec,#min,#am{
+    display: inline;
+    font-size: 55px;
+}
+span{
+    font-size: 55px;
+}
+.clock {
+    width: 360px;
+    height: 100px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    -webkit-animation: glowing 1s ease-in-out infinite alternate;
+    -moz-animation: glowing 1s ease-in-out infinite alternate;
+    animation: glowing 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes glowing {
+    from {
+      box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px blue;
+    }
+    to {
+      box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px blue;
+    }
+  }
